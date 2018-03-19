@@ -8,4 +8,6 @@ RUN mkdir -p /data/{backup,logs,software,db,web,upload,scripts,configs}/ \
     && chown -R nobody:root /data/ \
     && chmod -R g+w /data/
 
+VOLUME /data
+
 RUN echo 'This is a data volume docker, located in /data/'
